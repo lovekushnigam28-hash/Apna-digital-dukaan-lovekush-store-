@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LovekushAgent - Taj Hotel Agent | Digital Marketing Services</title>
+    <style>
+        * {margin:0; padding:0; box-sizing:border-box; font-family:'Segoe UI',sans-serif;}
+        body {background:#0f172a; color:#fff; line-height:1.6;}
+       .container {max-width:1100px; margin:0 auto; padding:20px;}
+        header {text-align:center; padding:60px 20px; background:linear-gradient(135deg,#1e3a8a,#7c3aed);}
+        h1 {font-size:2.8rem; margin-bottom:10px;}
+       .tagline {font-size:1.3rem; opacity:0.9; margin-bottom:30px;}
+       .badge {background:#f59e0b; color:#000; padding:8px 20px; border-radius:50px; font-weight:bold; display:inline-block; margin-bottom:20px;}
+       .btn-group {display:flex; gap:15px; justify-content:center; flex-wrap:wrap; margin-top:30px;}
+       .btn {padding:15px 30px; border:none; border-radius:10px; font-size:1.1rem; font-weight:bold; cursor:pointer; text-decoration:none; display:inline-block; transition:0.3s;}
+       .btn-call {background:#22c55e; color:#fff;}
+       .btn-whatsapp {background:#25D366; color:#fff;}
+       .btn-email {background:#3b82f6; color:#fff;}
+       .btn:hover {transform:translateY(-3px); box-shadow:0 10px 20px rgba(0,0,0,0.3);}
+       .services {display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:25px; margin:60px 0;}
+       .card {background:#1e293b; padding:30px; border-radius:15px; border:1px solid #334155;}
+       .card h3 {color:#60a5fa; margin-bottom:15px; font-size:1.5rem;}
+       .card p {color:#cbd5e1;}
+        footer {text-align:center; padding:40px 20px; border-top:1px solid #334155; margin-top:60px; color:#94a3b8;}
+       .security-btn {position:fixed; bottom:25px; right:25px; background:#ef4444; color:#fff; width:60px; height:60px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:1.8rem; cursor:pointer; box-shadow:0 5px 15px rgba(239,68,68,0.4); z-index:999; border:none;}
+       .security-modal {display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8); z-index:1000; align-items:center; justify-content:center;}
+       .modal-content {background:#1e293b; padding:30px; border-radius:15px; max-width:500px; width:90%; border:1px solid #334155;}
+       .modal-content h2 {color:#ef4444; margin-bottom:20px;}
+       .modal-content ul {margin:15px 0; padding-left:20px;}
+       .modal-content li {margin:8px 0; color:#cbd5e1;}
+       .close-btn {background:#ef4444; color:#fff; border:none; padding:10px 25px; border-radius:8px; margin-top:20px; cursor:pointer; font-weight:bold;}
+        @media(max-width:768px){h1{font-size:2rem;}.btn-group{flex-direction:column;}}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="badge">🛡️ Verified Digital Agent</div>
+            <h1>LovekushAgent</h1>
+            <p class="tagline">Taj Hotel Agent | Digital Marketing & Security Expert</p>
+            <div class="btn-group">
+                <a href="tel:+917819904845" class="btn btn-call">📞 Call Now</a>
+                <a href="https://wa.me/917819904845?text=Namaste%20LovekushAgent,%20mujhe%20service%20chahiye" class="btn btn-whatsapp">💬 WhatsApp</a>
+                <a href="mailto:20240992_lovekush@mangalayatan.edu.in" class="btn btn-email">✉️ Email</a>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="services">
+            <div class="card">
+                <h3>🌐 Website Development</h3>
+                <p>Professional business website, landing page, portfolio. Mobile-friendly aur fast loading. 24 ghante mein delivery.</p>
+            </div>
+            <div class="card">
+                <h3>📱 Digital Marketing</h3>
+                <p>Social media management, Google Ads, SEO. Aapke business ko online grow karne ke liye complete strategy.</p>
+            </div>
+            <div class="card">
+                <h3>🛡️ Security Assistant</h3>
+                <p>Website security audit, fraud protection, data safety. Aapke digital business ko secure rakhte hain 24x7.</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <p><strong>LovekushAgent - Taj Hotel Agent</strong></p>
+            <p>Najibabad, Uttar Pradesh, India | +91 7819904845</p>
+            <p style="margin-top:15px;">© 2026 All Rights Reserved</p>
+        </div>
+    </footer>
+    <button class="security-btn" onclick="openSecurity()">🛡️</button>
+    <div class="security-modal" id="securityModal">
+        <div class="modal-content">
+            <h2>🛡️ LovekushAgent Security Assistant</h2>
+            <p><strong>Aapki Digital Safety Ke Liye:</strong></p>
+            <ul>
+                <li>✅ Website hack protection aur malware scan</li>
+                <li>✅ Customer data encryption & backup</li>
+                <li>✅ Payment gateway security check</li>
+                <li>✅ Fraud transaction monitoring</li>
+                <li>✅ 24x7 Security support on call</li>
+            </ul>
+            <p><strong>Turant Sampark Karein:</strong></p>
+            <div class="btn-group" style="margin-top:20px;">
+                <a href="tel:+917819904845" class="btn btn-call">📞 Emergency Call</a>
+                <a href="https://wa.me/917819904845?text=Security%20help%20chahiye" class="btn btn-whatsapp">💬 WhatsApp Support</a>
+            </div>
+            <button class="close-btn" onclick="closeSecurity()">Band Karein</button>
+        </div>
+    </div>
+    <script>
+        function openSecurity() {document.getElementById('securityModal').style.display = 'flex';}
+        function closeSecurity() {document.getElementById('securityModal').style.display = 'none';}
+        window.onclick = function(event) {let modal = document.getElementById('securityModal'); if (event.target == modal) {modal.style.display = 'none';}}
+    </script>
+</body>
+</html>
